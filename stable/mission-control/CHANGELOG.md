@@ -1,6 +1,9 @@
 # JFrog Mission-Control Chart Changelog
 All changes to this chart will be documented in this file.
 
+## [104.7.xx] - August 14, 2021
+* Fix filebeat container resource declaration and assignment
+
 ## [104.7.11] - July 22, 2021
 * Added support for graceful shutdown of router container on SIGTERM
 * Update router version to `7.21.5`

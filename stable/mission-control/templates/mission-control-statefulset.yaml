@@ -453,9 +453,9 @@ spec:
         resources:
 {{ toYaml .Values.filebeat.resources | indent 10 }}
         terminationGracePeriodSeconds: {{ .Values.terminationGracePeriod }}
-      {{- end }}
         resources:
-{{ toYaml .Values.missionControl.resources | indent 10 }}
+{{ toYaml .Values.filebeat.resources | indent 10 }}
+      {{- end }}
       - name: {{ .Values.insightServer.name }}
         image: {{ include "mission-control.getImageInfoByValue" (list . "insightServer") }}
         imagePullPolicy: {{ .Values.imagePullPolicy }}
